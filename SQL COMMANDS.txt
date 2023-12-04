@@ -1,0 +1,51 @@
+
+Step 1] Create DATABASE
+-- Creating database
+----->create database attendance;
+
+step 2] Use that Database
+-- Selecting the database
+----->use attendance;
+
+step 3] Create Table <User> 
+-- User Table
+----->CREATE TABLE user(id int primary key, username varchar(25), name varchar(25), password varchar(25), prio int);
+
+step 4] Create Table <class>
+-- Class Table
+----->CREATE TABLE class(id int primary key, name varchar(25));
+
+step 5] Create Table <student>
+-- Student Table
+----->CREATE TABLE students(id int primary key, name varchar(25), class varchar(10));
+
+step 6] Create Table <teachers>
+-- Teachers Table
+----->CREATE TABLE teachers(id int primary key, name varchar(25));
+
+step 7] Create Table <attend>
+-- Attend Table
+----->CREATE TABLE attend(stid int, dt date, status varchar(15), class varchar(15));
+
+step 8] Adding the First user to get logged in 
+-- Creating admin user
+----->INSERT INTO user VALUES(1, 'admin', 'Admin', 'admin', 1);
+
+step 9] Adding the Student user to get logged in
+-- Creating student user
+----->INSERT INTO user VALUES(2, 'student', 'Student1', 'student', 3);
+
+
+step 8] Adding the First user to get logged in
+-- Creating admin user
+----->INSERT INTO user VALUES(3, 'teacher', 'Teacher', 'teacher', 2);
+
+
+
+
+
+----------------------------------------------
+To connect MySQL connector 
+set CLASSPATH=%CLASSPATH%;C:\Program Files\Java\jre1.8\rt.jar;  
+
+
